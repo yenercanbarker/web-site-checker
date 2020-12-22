@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Quantify Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Quantify.ttf');
+}
+
+@font-face {
+  font-family: 'Quantify Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Quantify-Bold.ttf');
+}
+
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#mainnavbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#brandlogo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid none;
+  border-radius: 45px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-family: 'Quantify Regular';
+  color: black;
+}
+
+.navbar-brand:hover {
+  font-style: italic;
+  color: black;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: black;
+}
+
+.navbar .navbar-nav>.active .nav-link {
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+}
+
+.nav-link:hover {
+  font-weight: bolder;
+  font-style: italic;
+  color: black;
+}
+
+#menuicon {
+  color: black;
+  font-weight: bolder;
+  font-size: 28px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  background: none;
+}
+
+#mainslider {
+  box-shadow: 3px 3px 3px 1px grey;
+  padding: 0px;
+  margin: 0px;
+}
+
+#gotopbutton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #f6b501;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#gotopbutton:hover {
+  background-color: black;
+  /* Add a dark-grey background on hover */
+  color: #f6b501;
+}
+
+.firstpanel {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.servicescard {
+  background-color: #5bc0de;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 3px 3px 3px 3px grey;
+  border-radius: 10px;
+}
+
+.servicescard:hover {
+  border-radius: 10px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+.servicescard:hover i {
+  -webkit-animation-name: servicecardspin;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: servicecardspin;
+  animation-duration: 2s;
+}
+
+.parallax {
+  background-image: url("../images/parallax.jpg");
+
+  /* Set a specific height */
+  padding: 100px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#secondpanel {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#thirdpanel {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#fourthpanel {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#footercontent {
+  padding: 24px;
+}
+
+#form {
+  background-color: white;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes servicecardspin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Standard syntax */
+@keyframes servicecardspin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
